@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>MongoDB vs SQL Server</title>
+</head>
+
+<body>
+  <h1>MongoDB vs SQL Server: Which is <br> Better? [10 Critical Differences]</h1>
+  <p> <a href="https://hevodata.com/learn/author/nidhi-b/">Nidhi B.</a> on <a href="https://hevodata.com/learn/category/data-integration/database-management-systems/"> Database Management Systems,</a> <a
+      href="https://hevodata.com/learn/category/microsoft-sql-server/"> Microsoft SQL Server,</a> <a href="https://hevodata.com/learn/category/data-integration/database-management-systems/mongodb/"> MongoDB </a> . February <br> 10th, 2022 . <a
+      href="https://community.hevodata.com/write-for-hevo"><b> WRITE FOR HEVO </b> </a> </p>
+  <br>
+  <img width="768" height="432" src="https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1646047000/hevo-learn/MongoDB-vs-SQL-Server-FI/MongoDB-vs-SQL-Server-FI.png?_i=AA" alt="Automated Data Pipeline">
+  <p>While building a software application, the question arises where will you store <br> your data and how? The traditional approach is a simple text file or CSV file <br> which is not a good choice in today’s big data world. The solution is
+    Database <br> Management System(DBMS) which allows different user application programs <br> to concurrently access the same Database.</p>
+  <br>
+  <p>A Database Management system(DBMS) is a simpler, easier, reliable, faster, <br> secure, and powerful software tool for Storing, Managing, and Retrieving data. <br> There are two types of Databases: Relational and Non-Relational Databases. <br>
+    An example of a Relational Database is SQL Server and a Non-Relational <br> Database is MongoDB. We will be discussing the key differences between <br> MongoDB vs SQL Server in this blog.</p>
+  <br>
+  <h2> <strong>Table of Contents</strong> </h2>
+  <ul>
+    <li> <a href="https://hevodata.com/learn/mongodb-vs-sql-server/#t1">What is MongoDB?</a> </li>
+    <ul style="list-style-type: circle;">
+      <li> <a href="https://hevodata.com/learn/mongodb-vs-sql-server/#t1.1">Features of MongoDB</a> </li>
+      <ul style="list-style-type: square;">
+        <li> <a href="https://hevodata.com/learn/mongodb-vs-sql-server/#t1.2">High Performance</a> </li>
+        <li> <a href="https://hevodata.com/learn/mongodb-vs-sql-server/#t1.3">Scalability</a> </li>
+        <li> <a href="https://hevodata.com/learn/mongodb-vs-sql-server/#t1.4">Availability</a> </li>
+        <li> <a href="https://hevodata.com/learn/mongodb-vs-sql-server/#t1.5">Flexibility</a> </li>
+
+      </ul>
+    </ul>
+  </ul>
+  <ul>
+    <li> <a href="https://hevodata.com/learn/mongodb-vs-sql-server/#t2">What is SQL Server?</a> </li>
+
+    <ul style="list-style-type: circle;">
+      <li> <a href="https://hevodata.com/learn/mongodb-vs-sql-server/#t2.1">Features of SQL Server</a> </li>
+
+      <ul style="list-style-type: square;">
+        <li> <a href="https://hevodata.com/learn/mongodb-vs-sql-server/#t2.2">Cloud DatabaseSupport</a> </li>
+        <li> <a href="https://hevodata.com/learn/mongodb-vs-sql-server/#t2.3">Ease of Management</a> </li>
+        <li> <a href="https://hevodata.com/learn/mongodb-vs-sql-server/#t2.4">High security</a> </li>
+        <li> <a href="https://hevodata.com/learn/mongodb-vs-sql-server/#t2.5">End-to-End Business Data Solutions</a> </li>
+      </ul>
+    </ul>
+  </ul>
+  <ul>
+    <li> <a href="https://hevodata.com/learn/mongodb-vs-sql-server/#t3">MongoDB vs SQL Server: Key Differences</a> </li>
+
+  <ul style="list-style-type: circle;">
+    <li> <a href="https://hevodata.com/learn/mongodb-vs-sql-server/#t3.1">MongoDB vs SQL Server: Developed by and Initial Release</a> </li>
+    <li> <a href="https://hevodata.com/learn/mongodb-vs-sql-server/#t3.2">MongoDB vs SQL Server: Database Model</a> </li>
+    <li> <a href="https://hevodata.com/learn/mongodb-vs-sql-server/#t3.3">MongoDB vs SQL server: Implementation Language</a> </li>
+    <li> <a href="https://hevodata.com/learn/mongodb-vs-sql-server/#t3.4">MongoDB vs SQL Server: License</a> </li>
+    <li> <a href="https://hevodata.com/learn/mongodb-vs-sql-server/#t3.5">MongoDB vs SQL Server: Data Schema</a> </li>
+    <li> <a href="https://hevodata.com/learn/mongodb-vs-sql-server/#t3.6">MongoDB vs SQL Server: Query Language</a> </li>
+    <li> <a href="https://hevodata.com/learn/mongodb-vs-sql-server/#t3.7">MongoDB vs SQL Server: Scalibility</a> </li>
+    <li> <a href="https://hevodata.com/learn/mongodb-vs-sql-server/#t3.8">MongoDB vs SQL Server: Map Reduce</a> </li>
+    <li> <a href="https://hevodata.com/learn/mongodb-vs-sql-server/#t3.9">MongoDB vs SQL Server: Joins</a> </li>
+    <li> <a href="https://hevodata.com/learn/mongodb-vs-sql-server/#t3.10">MongoDB vs SQL Server: Transcation</a> </li>
+    <li> <a href="https://hevodata.com/learn/mongodb-vs-sql-server/#t3.11">MongoDB vs SQL Server: XML Support</a> </li>
+    </ul>
+  </ul>
+  <ul>
+    <li> <a href="https://hevodata.com/learn/mongodb-vs-sql-server/#t4">Conclusion</a> </li>
+  </ul>
+  <h2>What is MongoDB?</h2>
+  <p> <a href="https://www.mongodb.com/">MongoDB</a> is an open-source, cross-platform, document-oriented, and non- <br>elational database system. MongoDB is developed by MongoDB Inc. and was <br> first released on February 11, 2009. Its stable
+    release is <a href="https://www.mongodb.com/docs/manual/release-notes/5.0/"></a> MongoDB 5.0.5 released on 6 <br> December 2021. It is written in different programming languages <br> like <a
+      href="https://www.google.com/search?sxsrf=APq-WBsEsNVCcZdBITZ1U5IbbLdHeh2BBg:1644081892758&q=JavaScript&stick=H4sIAAAAAAAAAOPgE-LSz9U3MK2KLzLKU-IAsY0KLM21dDLKrfST83NyUpNLMvPz9Ivz00rKE4tSrQqK8tOLEnNzM_PSFXIS89JLE9NTF7FyeSWWJQYnF2UWlOxgZQQA1itDBlYAAAA&sa=X&ved=2ahUKEwj18Mupiun1AhVTT2wGHW48CqwQmxMoAXoECCoQAw">JavaScript,</a>
+    <a href="https://www.python.org/">Python,</a> <a href="https://www.java.com/en/">Java,</a>
+    <a href="https://www.php.net/">PHP,</a> <a href="https://www.w3schools.com/CPP/default.asp">C++,</a> <a href="https://en.wikipedia.org/wiki/C_(programming_language)">C,</a> <a href="https://www.ruby-lang.org/en/">Ruby,</a> <a
+      href="https://www.perl.org/">Perl.</a>
+  </p>
+  <img width="385" height="216" src="https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1644403814/hevo-learn/springboot_MongoDB_configuration_mongodb/springboot_MongoDB_configuration_mongodb.jpg?_i=AA" alt="MongoDB vs SQL Server: MongoDB logo">
+  <pre>              <b> Image Source</b>    </pre>
+  <p>MongoDB is a NoSQL Server in which data is stored in <a
+      href="https://en.wikipedia.org/wiki/BSON#:~:text=BSON%20(%2F%CB%88bi%CB%90s,a%20computer%20data%20interchange%20format.&text=It%20is%20a%20binary%20form,originated%20in%202009%20at%20MongoDB.">BSON</a> (Binary JSON) <br> documents and each
+    document is essentially built on a key-value pair structure. As <br> MongoDB easily stores schemaless data, make it appropriate for capturing data <br> whose structure is not known. This document-oriented approach is designed to <br> offer a
+    richer experience with modern programming techniques. </p>
+  <p>To install MongoDB click <a href="https://www.mongodb.com/docs/manual/administration/install-community/">here.</a> </p>
+  <br>
+  <h3> <strong>Features of MongoDB</strong> </h3>
+  <img width="400" height="150" src="https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1644486462/hevo-learn/mongodb-architecure/mongodb-architecure.png?_i=AA" alt="Image Source">
+  <pre>    Image Source </pre>
+  <br>
+  Main features of MongoDB which make it unique are:
+  <h3> <b>High Performance</b> </h3>
+  <p>Data operations on MongoDB are fast and easy because of their NoSQL nature.<br> Data can be quickly stored, manipulated, and retrieved without any compromise <br> on data integrity.</p>
+  <br>
+  <h3>Scalibility</h3>
+  <p>In the Big Data era, MongoDB data can be distributed across a cluster of machines <br> quickly and equally, free of bulkiness. The scalability of MongoDB handles a <br> growing amount of data capably. <a
+      href="https://www.mongodb.com/docs/manual/sharding/">Sharding</a> is a process in MongoDB used to <br> horizontally scale the data across multiple servers when the size of data increases.</p>
+  <br>
+  <h3>Availability</h3>
+  <p>Data is highly available with MongoDB as it makes multiple copies of the same <br> data and sends copies of data across different servers. In case any server fails, <br> data can be retrieved from another server without delay.</p>
+  <br>
+  <h3>Flexibility</h3>
+  <p>MongoDB can easily be combined with different Database Management Systems, <br> both SQL and NoSQL types. Document-oriented structure makes MongoDB <br> schema dynamically flexible and different types of data can be easily stored and <br>
+    manipulated.</p>
+  <br>
+  <h2>What is SQL Server?</h2>
+  <img width="350" height="255" src="https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1644478410/hevo-learn/sql-server_logo/sql-server_logo.jpg?_i=AA">
+  <pre>                    image source </pre>
+  <p> <a
+      href="https://www.microsoft.com/en-in/sql-server/sql-server-2019?ranMID=46131&ranEAID=je6NUbpObpQ&ranSiteID=je6NUbpObpQ-nSt2ng8.VjJgIt54EMO0.w&epi=je6NUbpObpQ-nSt2ng8.VjJgIt54EMO0.w&irgwc=1&OCID=AID2200057_aff_7806_1243925&tduid=%28ir__n1mj3mvan0kf6m3o0tqrdtmyfm2xvyq2g0c96pw200%29%287806%29%281243925%29%28je6NUbpObpQ-nSt2ng8.VjJgIt54EMO0.w%29%28%29&irclickid=_n1mj3mvan0kf6m3o0tqrdtmyfm2xvyq2g0c96pw200">SQL
+      Server</a>is a Relational Database Management System(RDBMS). It is also <br> known as Microsoft SQL Server or sometimes as MSSQL. SQL Server is <br> developed by Microsoft and was initially releases on April 24, 1989. Its stable <br> release is
+    SQL Server 2019 released on 4 November 2019. MSSQL is written <br> in programming languages like C and C++.</p>
+  <p>SQL Server is based on the relational model introduced by <a href="https://en.wikipedia.org/wiki/Edgar_F._Codd">E.F.Codd.</a> In RDBMS data is stored in tables and the relationships among the data are maintained between tables. In tables, data
+    is organized in rows and columns format. Each column represents a particular field or feature and each row in the table represents an entry or a record. </p>
+  <p>Microsoft SQL Server offers a <a href="https://docs.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2017?view=sql-server-2017#includessnoversionincludesssnoversion-mdmd-editions">:</a>Express, Enterprise, Standard, Web,
+    Developer. Express edition is freeware for <br> small and entry-level applications while others are licensed-based editions <br> used for bigger projects on commercial levels based on the service required. <br> SQL Server supports XML data type
+    format and dynamic management views. </p>
+  <p>To install SQL Server click <a
+      href="https://www.microsoft.com/en-in/sql-server/sql-server-downloads?ranMID=46131&ranEAID=je6NUbpObpQ&ranSiteID=je6NUbpObpQ-2DlJxYn8CX_Ps._JqG41eQ&epi=je6NUbpObpQ-2DlJxYn8CX_Ps._JqG41eQ&irgwc=1&OCID=AID2200057_aff_7806_1243925&tduid=%28ir__n1mj3mvan0kf6m3o0tqrdtmyfm2xvyqwksc96pw200%29%287806%29%281243925%29%28je6NUbpObpQ-2DlJxYn8CX_Ps._JqG41eQ%29%28%29&irclickid=_n1mj3mvan0kf6m3o0tqrdtmyfm2xvyqwksc96pw200">here.</a>
+  </p>
+  <br>
+  <h3>Features of SQL Server</h3>
+  <img width="400" height="350" src="https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1644486589/hevo-learn/SQL-Server-architecture/SQL-Server-architecture.png?_i=AA" alt="Features">
+  <pre>           image source</pre>
+  <p>Main features of SQL Server that make it highly usable are:</p>
+  <h3>Cloud Database Support</h3>
+  <p>Microsoft SQL Server offers editions that can be integrated with Microsoft <br> cloud or Azure SQL with built-in security and manageability. Cloud database <br> support makes SQL Server highly available, fast failover with minimum uptime.</p>
+  <h3>Ease of Management</h3>
+  <p>Microsoft SQL Servers can easily be used with Windows and Linux systems. <br> SQL Server deployment and its management is easy with Kubernetes.</p>
+  <h3>High Security</h3>
+  <p>Data in SQL Server is encrypted and highly secured. Schemas and Tables can <br> be password protected easily and can be accessed with permissions only.</p>
+  <h3>End-to-End Business Data Solutions</h3>
+  <p>SQL Server mainly focuses on commercial needs so it provides end-to-end <br> business data solutions. Microsoft SQL Server offers tools for Data <br> Administration, ETL solutions, Online Analytical Processing(OLAP), and Data <br> Mining
+    purposes. It additionally provides Option Reporting, Interactive Analysis, <br> and Visual Data Exploration using SQL Server BI tools.</p>
+  <h3><b>Simplify ETL Using Hevo’s No-code Data Pipeline</b> </h3>
+  <p> <a href="https://hevodata.com/?utm_source=Learn_mongodb-vs-sql-server&utm_medium=l1_home&utm_campaign=blog_click">Hevo Data</a>is a No-code Data Pipeline that offers a fully managed <br> solution to set up Data Integration for <a
+      href="https://hevodata.com/?utm_source=Learn_mongodb-vs-sql-server&utm_medium=l2_integrations&utm_campaign=blog_click">100+ Data Sources</a>(Including 40+ <br> Free sources) and will let you directly load data from many sources to <br> the
+    Destinations of your choice like MongoDB and SQL Server. </p>
+  <p>Hevo will automate your data flow in minutes without writing any line of <br> code. Its fault-tolerant architecture makes sure that your data is secure <br> and consistent. Hevo provides you with a truly efficient and fully <br> automated
+    solution to manage data in real-time and always have <br> analysis-ready data.</p>
+  <a href="https://hevodata.com/signup/?utm_source=Learn_mongodb-vs-sql-server&utm_medium=mango_l1_signup&utm_campaign=blog_click"> GET STARTED WITH HEVO FOR FREE </a>
+  <p>Look at some of the salient features of Hevo:</p>
+  <ul>
+    <li> <b>Fully Managed: </b> It requires no management and maintenance as Hevo <br>is a fully automated platform. </li>
+    <br>
+    <li> <b>Data Transformation:</b> It provides a simple interface to perfect, modify, <br> and enrich the data you want to transfer. </li>
+    <br>
+    <li> <b>Real-Time:</b> Hevo offers real-time data migration. So, your data <br> is always ready for analysis. </li>
+    <br>
+    <li> <b>Schema Management:</b> Hevo can automatically detect the schema of <br> the incoming data and map it to the destination schema. </li>
+    <br>
+    <li> <b>Connectors:</b> Hevo supports <b>100+ Integrations</b> to SaaS platforms such <br> as WordPress, FTP/SFTP, Files, Databases, BI tools, and Native REST <br> API & Webhooks Connectors. It supports various destinations <br> including Google
+      BigQuery, Amazon Redshift, Snowflake, Firebolt, <br> Data Warehouses; Amazon S3 Data Lakes; Databricks, MySQL,<b>SQL <br> Server, </b> TokuDB, DynamoDB,<b>MongoDB,</b> PostgreSQL Databases to name a few. </li>
+    <br>
+    <li> <b>Secure:</b> Hevo has a fault-tolerant architecture that ensures that the <br> data is handled in a secure, consistent manner with zero data loss. </li>
+    <br>
+    <li> <b>Hevo Is Built To Scale:</b> As the number of sources and the volume of <br> your data grows, Hevo scales horizontally, handling millions of records <br> per minute with very little latency. </li>
+    <br>
+    <li> <b>Live Monitoring:</b> Advanced monitoring gives you a one-stop view to <br> watch all the activities that occur within Data Pipelines. </li>
+    <br>
+    <li> <b>Live Support:</b> Hevo team is available round the clock to extend <br> exceptional support to its customers through chat, email, and support <br> calls.</li>
+
+  </ul>
+  <a href="https://hevodata.com/signup/?utm_source=Learn_mongodb-vs-sql-server&utm_medium=mango_l2_signup&utm_campaign=blog_click">
+    <h3> SIGN UP HERE FOR A 14-DAY FREE TRAIL!</h3>
+  </a>
+  <br>
+  <h2> <strong>MongoDB vs SQL Server: Key Differences</strong> </h2>
+  <p>The key differences between MongoDB and SQL Server:</p>
+  <table border="1" noshade=" ">
+    <thead>
+      <tr>
+        <td><b>Base of Comparison</b></td>
+        <td> <b>MongoDB</b> </td>
+        <td> <b>SQL Server</b> </td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Developed by and <br> Initial Release</td>
+        <td>Developed by <br> MongoDB Inc. and <br> initially released on <br> February 11, 2009.</td>
+        <td>Developed by <br> Microsoft Corporation <br> and released initially <br> on April 24, 1989.</td>
+      </tr>
+      <tr>
+        <td>Database Model</td>
+        <td>Non-Relational <br> Database: Document- <br>oriented (key-value <br>structure)</td>
+        <td>Relational Database:<br> Tables format</td>
+      </tr>
+      <tr>
+        <td>Implementation <br>Language</td>
+        <td>JavaScript, Python,<br> Java, PHP, C++, C,<br> Ruby, Perl</td>
+        <td>C, C++</td>
+      </tr>
+      <tr>
+        <td>License</td>
+        <td>Open-Source</td>
+        <td>License required</td>
+      </tr>
+      <tr>
+        <td>Data Schema</td>
+        <td>Dynamic Schema</td>
+        <td>Fixed Schema</td>
+      </tr>
+      <tr>
+        <td>Query Language</td>
+        <td>MongoDB Query <br>Language </td>
+        <td>SQL Query Language</td>
+      </tr>
+      <tr>
+        <td>Scalability</td>
+        <td>Horizontal</td>
+        <td>Vertical</td>
+      </tr>
+      <tr>
+        <td>Map Reduce</td>
+        <td>Supports Map Reduce <br> method.</td>
+        <td>Does not support the <br> Map-Reduce method.</td>
+      </tr>
+      <tr>
+        <td>Joins</td>
+        <td>No</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>Transaction</td>
+        <td>MongoDB provides <br> Multi-document ACID <br> transactions with <br> snapshot isolation.</td>
+        <td>MS SQL Server <br> provides ACID <br> transactions without <br> snapshot isolation.</td>
+      </tr>
+      <tr>
+        <td>XML support</td>
+        <td>No</td>
+        <td>Yes</td>
+      </tr>
+    </tbody>
+
+
+  </table>
+  <p>The following section talks about the primary differences between MongoDB <br> vs SQL Server in detail:</p>
+  <br>
+  <h3> <b>Developed by and Initial Release</b> </h3>
+  <p>MongoDB is developed by MongoDB Inc. and was initially released on <br> February 11, 2009.</p>
+  <p>SQL Server is developed by Microsoft Corporation and was initially released on <br> April 24, 1989.</p>
+  <br>
+  <h3> <b>Database Model</b> </h3>
+  <p>MongoDB is a Non-Relational Database based on a document-oriented <br> structure that internally is based on a key-value structure.</p>
+  <p>SQL Server is a Relational Database based on relatable structured tables with <br> various rows and columns.</p>
+  <br>
+  <h3> <b>Implementation Language</b> </h3>
+  <p>MongoDB is implemented in JavaScript, Python, Java, PHP, C++, C, Ruby, Perl, <br> C, C++ whereas SQL Server is implemented in C and C++.</p>
+  <br>
+  <h3> <b>License</b> </h3>
+  <p>MongoDB is an Open-Source DBMS whereas a SQL Server license is required <br> for commercial purposes.</p>
+  <br>
+  <h3> <b>Data Schema</b> </h3>
+  <p>MongoDB has a flexible dynamic schema that can easily be changed with the <br> evolution of data, application, or business</p>
+  <p>SQL Server has a fixed Schema that is predefined before inserting any data. <br> Fixed schema means schema can’t be changed as data, application, or <br> business requirement evolves.</p>
+  <br>
+  <h3> <b>Query Language</b> </h3>
+  <p>MongoDB uses MongoDB Query Language to query unstructured data from <br> the database.</p>
+  <p>SQL Server uses SQL Query Language to Create Tables, Insert, Fetch or <br> Update data in the database.</p>
+  <br>
+  <h3> <b>Scalability</b> </h3>
+  <p>MongoDB supports Horizontal Scaling in which data is distributed across <br> clusters. The Sharding process is used to implement horizontal scaling which <br> results in an always-up server.</p>
+  <p>SQL Server supports vertical scaling which is the traditional approach. In <br> vertical scaling, physical or virtual resources are added to the hosting server of <br> the database.</p>
+  <br>
+  <h3> <b>Map Reduce</b> </h3>
+  <p>MongoDB supports a data processing algorithm for concentrating large <br> volumes of data into aggregated results. MongoDB provides the MapReduce <br> database command to perform map-reduce operations.</p>
+  <p>SQL Server does not support the Map-Reduce method.</p>
+  <br>
+  <h3> <b>Joins</b> </h3>
+  <p>MongoDB is a non-relational database so it does not support JOINs whereas <br> SQL Server used JOINS to retrieve data from multiple tables which are joined.</p>
+  <br>
+  <h3> <b>Transaction</b> </h3>
+  <p>MongoDB provides multi-document <a href="https://www.mongodb.com/basics/acid-transactions">ACID transactions</a> (ACID is an acronym for <br> Atomicity, Consistency, Isolation, Durability) with snapshot isolation, which <br> ensures that the
+    database is in a valid state after a set of database operations <br> is executed.</p>
+  <p>MS SQL Server also provides ACID transactions with data integrity without <br> snapshot isolation.</p>
+  <br>
+  <h3> <b>XML support</b> </h3>
+  <p>MongoDB doesn’t support XML structured documents. Documents in <br> MongoDB are stored in BSON format.</p>
+  <p>SQL Server provides support for XML structured data. XML support is <br> integrated into all the components of SQL Server.</p>
+  <br>
+  <h2> <em> <strong>Conclusion</strong> </em> </h2>
+  <p>MongoDB is a database that is more advanced and capable of handling big <br> data with dynamic schema features. SQL Server is an RDBMS that is used to <br> manage the relational database system and offers end-to-end business data <br> solutions.
+    In the case of unstructured data MongoDB is a good choice. Also, <br> MongoDB is open source which makes it readily available.</p>
+  <p>No doubt SQL Server is going strong for many years but now with the era of <br> Big Data, MongoDB seems to have a bright future. But, that doesn’t mean SQL <br> Server will be completely eradicated. The choice of database between <br> MongoDB
+    and SQL Server is completely specific to the user’s needs.</p>
+  <br>
+  <a href="https://hevodata.com/?utm_source=Learn_mongodb-vs-sql-server&utm_medium=mango_Conclusion_Visit_our_Website_to_Explore_Hevo&utm_campaign=blog_click">
+    <h3> <b>VISIT OUR WEBSITE TO EXPLORE HEVO</b> </h3>
+  </a>
+  <p> <a href="https://hevodata.com/?utm_source=Learn_mongodb-vs-sql-server&utm_medium=l3_home&utm_campaign=blog_click">HEVO DATA,</a>a No-code Data Pipeline provides you with a consistent and <br> reliable solution to manage data transfer between a
+    variety of sources to <br> destinations like <b>MongoDB</b> and <b>SQL Server</b>, with a few clicks. </p>
+  <p>Hevo Data with its strong integration with <a href="https://hevodata.com/?utm_source=Learn_mongodb-vs-sql-server&utm_medium=l4_home&utm_campaign=blog_click">100+ sources</a> <em> <b>(including 40+ free sources)</b> </em> allows you to not only
+    export data from your desired data sources & <br> load it to the destination of your choice, but also transform & enrich your data <br> to make it analysis-ready so that you can focus on your key business needs <br> and perform insightful
+    analysis using BI tools.</p>
+  <br>
+  <iframe width="500" height="375" src="https://www.youtube.com/embed/p0XGLDgvCo8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <p>Want to take Hevo for a spin? <a href="https://hevodata.com/signup/?utm_source=Learn_mongodb-vs-sql-server&utm_medium=mango_Conclusion_Sign_Up&utm_campaign=blog_click"> <b>SIGNUP</b> </a> for a <b>14-day free trial</b> and experience <br> the
+    feature-rich Hevo suite first hand. You can also have a look at the unbeatable <br> pricing that will help you choose the right plan for your business needs.</p>
+  <p> <a href="https://hevodata.com/learn/tag/mongodb/">
+      <h3>MongoDB</h3>
+    </a> <a href="https://hevodata.com/learn/tag/mssql/">
+      <h3>MsSQL</h3>
+    </a> </p>
+  <h2>Continue Reading</h2>
+  
+
+
+</body>
+
+</html>
